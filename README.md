@@ -65,7 +65,7 @@ For the components disabled by PackageManager, if an application starts it, an e
 ### Shizuku/Sui Mode
 Shizuku is an application developed by Rikka, [RikkaApps/Shizuku](https://github.com/RikkaApps/Shizuku)
 
-Starting from Android O, if we install a Test-Only application, users could use pm command to control the command status. We could modify the install package to set it into Test-Only mode, using APIs provided by Shizuku to control the component status.
+Starting from Android O, if we install a Test-Only application, users could use the `pm` command to control the command status. We could modify the install package to set it into Test-Only mode, using APIs provided by Shizuku to control the component status.
 
 Tutorial for modifying APKs (Chinese Only) [[实验性功能] [开发者向]如何免Root控制应用程序组件](https://github.com/lihenggui/blocker/wiki/%5B%E5%AE%9E%E9%AA%8C%E6%80%A7%E5%8A%9F%E8%83%BD%5D-%5B%E5%BC%80%E5%8F%91%E8%80%85%E5%90%91%5D%E5%A6%82%E4%BD%95%E5%85%8DRoot%E6%8E%A7%E5%88%B6%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E7%BB%84%E4%BB%B6)
 
@@ -114,7 +114,7 @@ Alternatively, you can use [Weblate](https://weblate.sanmer.dev/projects/blocker
 ## Frequently Asked Questions
 
 1. When clicking the button in Shizuku mode, the component state cannot be controlled, and an error
-   pops up: SecurityException: Shell cannot change component state for 'xx' to state 'xx'.
+   pops up: SecurityException: Shell cannot change the component state for 'xx' to state 'xx'.
 
 * The Shell permission of Shizuku cannot disable unmodified application components. Please restart
   Shizuku with Root privileges or try modifying the APK.
